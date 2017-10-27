@@ -1,0 +1,74 @@
+/**
+* Reveal Modals
+**/
+
+#overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s all;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.60);
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.popup {
+    position: fixed;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    width: calc(100% - 20px);
+    min-width: 300px;
+    transition: 0.5s all;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: #ffffff;
+    max-height: 100%;
+    &--notfixed {
+        position: absolute;
+        top: 0;
+    }
+    &.visible {
+        visibility: visible;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+    .popup_close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #f2f2f2;
+        &:hover {
+            background-color: #DDDDDD;
+            img {
+                filter: invert(100%);
+            }
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            cursor: pointer;
+            transition: 0.3s all;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.successfully {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    text-align: center;
+}

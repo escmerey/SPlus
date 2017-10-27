@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta name="keywords" content="document" />
+        <meta name="description" content="document" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+        <!-- Document stylesheet files -->
+        <link rel="stylesheet" href="style/swiper.min.css"/>
+        <link rel="stylesheet" href="style/jquery-ui.min.css"/>
+        <link rel="stylesheet" href="style/lightslider.css"/>
+        <link rel="stylesheet" href="style/nice-select.css"/>
+        <link rel="stylesheet" href="style/perfect-scrollbar.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i|Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+        <!-- jQuery scripts -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/popup.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/validate.page.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/swiper.jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/lightslider.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/perfect-scrollbar.jquery.min.js"></script>
+        <script src="js/jQueryUITouch.js"></script>
+        <!-- Google map -->
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyD5oswumLUaPeyYKa0zpFR7gNsobVkS7eI"></script>
+        <!-- Functionaly scripts -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a></p>
+        <![endif]-->
+
+        <div class="hidden_menu">
+            <div class="menu-toggle toggle-burger white"><span></span></div>
+            <div class="hidden_menu__items">
+                <a href="#" class="hidden_menu__item">О компании</a>
+                <a href="#" class="hidden_menu__item">Отзывы</a>
+                <a href="#" class="hidden_menu__item">FAQ</a>
+                <a href="#" class="hidden_menu__item">Блог</a>
+                <a href="#" class="hidden_menu__item">Контакты</a>
+                <a href="#" class="hidden_menu__item yellow">Оплата и доставка</a>
+                <a href="#" class="hidden_menu__item line">Заказать звонок</a>
+            </div>
+            <div class="header__middle_item">
+                <img src="images/ico/smartphone.svg" class="header__icon" alt="">
+                <a href="tel:88005553535" class="header__phone">8 800 555 35 35</a>
+            </div>
+            <hr>
+            <div class="header__middle_item">
+                <img src="images/ico/calendar.svg" class="header__icon" alt="">
+                <div class="header__schedule">
+                    <span>График работы:</span>
+                    <p>Пн-пт, 9:00 - 18:00</p>
+                </div>
+            </div>
+            <hr>
+            <div class="header__middle_item">
+                <div class="header__login">
+                    <a class="callPopup" data-popupBlock="popupSignin">Вход</a> / <a href="#">Регистрация</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="header__top">
+                <div class="wrapper">
+                    <div class="menu-toggle toggle-burger"><span></span></div>
+                    <div class="header__topmenu">
+                        <a href="#" class="header__topmenu_item">О компании</a>
+                        <a href="#" class="header__topmenu_item">Отзывы</a>
+                        <a href="#" class="header__topmenu_item">FAQ</a>
+                        <a href="#" class="header__topmenu_item">Блог</a>
+                        <a href="#" class="header__topmenu_item">Контакты</a>
+                    </div>
+                    <div class="header__rightlink">
+                        <a href="#" class="header__rightlink_item">Оплата и доставка</a>
+                        <a href="#" class="header__rightlink_item">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__middle">
+                <div class="wrapper">
+                    <a href="/" class="header__middle_item header__logo"><img src="images/logotype.png" alt=""></a>
+                    <hr>
+                    <div class="header__middle_item">
+                        <img src="images/ico/smartphone.svg" class="header__icon" alt="">
+                        <a href="tel:88005553535" class="header__phone">8 800 555 35 35</a>
+                    </div>
+                    <hr>
+                    <div class="header__middle_item">
+                        <img src="images/ico/calendar.svg" class="header__icon" alt="">
+                        <div class="header__schedule">
+                            <span>График работы:</span>
+                            <p>Пн-пт, 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="header__middle_item">
+                        <div class="header__login">
+                            <a class="callPopup" data-popupBlock="popupSignin">Вход</a> / <a href="#">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="wrapper">
+                    <div class="header__btn catalog">
+                        <div class="catalog__title">
+                            <div class="catalog__burger toggle-burger"><span></span></div>
+                            <p>Каталог товаров</p>
+                        </div>
+                        <div class="catalog__items">
+                            <div class="catalog__item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M14.5 1C7.06 1 1 7.06 1 14.5S7.06 28 14.5 28 28 21.94 28 14.5 21.94 1 14.5 1zM27 16.5l-1.64-2.72 1.13-3.33c.42 1.28.66 2.63.66 4.05 0 .68-.06 1.34-.16 2zm-3.2 6.56c-.05 0-.1-.02-.16 0l-4.1.65c0-.04 0-.1-.04-.14l-2.32-3.87 3.75-5.8h3.56c0 .06 0 .1.03.15l2.2 3.66c-.52 2.04-1.54 3.86-2.92 5.36zm-4.25 1.5l3.25-.52c-1.4 1.23-3.1 2.15-4.94 2.66zM6.35 4.84c2.12-1.8 4.86-2.92 7.85-3 .02.07.05.12.1.17l2.33 2.2-.92 3.45-6 2.3c-.02 0-.04-.03-.07-.05L5.9 7.92zm10.84-1.26l-1.8-1.7c1.64.1 3.2.54 4.62 1.23zm-6.95 13.76l-.34-6.56 6.14-2.36 4.14 5.1-3.58 5.52zm15.77-8.07c0 .02-.03.04-.04.06l-1.27 3.74h-3.8l-4.34-5.35.9-3.32 3.48-.58c.07 0 .14-.05.2-.1 2.12 1.32 3.83 3.25 4.88 5.55zM5.35 5.77L5 8.12 2.76 9.8c.6-1.5 1.5-2.88 2.6-4.03zm-3.06 5.4s.03 0 .04-.02L5.6 8.72l3.45 1.83.37 7.14v.02L6.2 20.94c-.03.03-.05.06-.06.1L3 19.7h-.04c-.7-1.6-1.12-3.35-1.12-5.2 0-1.15.16-2.26.45-3.32zm1.26 9.7l2.3.97L7.6 25.1c-1.66-1.08-3.04-2.54-4.04-4.24zm5.4 5l-.04-.08-2.24-4.2.1-.06 3.38-3.35 6.12 1.63 2.5 4.17.07.1-2.3 2.9c-.66.1-1.35.16-2.05.16-2 0-3.88-.47-5.55-1.3z" fill="#000000"/></svg><span>Спорт</span>
+                                </a>
+                                <div class="catalog__submenu">
+                                    <div class="catalog__submenu_cols">
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Товары для тенниса</a>
+                                            <a href="#">Товары для хоккея</a>
+                                            <a href="#">Товары для бокса</a>
+                                            <a href="#">Шлемы</a>
+                                            <a href="#">Спортивные принадлежности</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Наградная продукция</a>
+                                            <a href="#">Лыжи</a>
+                                            <a href="#">Мячи</a>
+                                            <a href="#">Санки</a>
+                                            <a href="#">Турники</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Брусья</a>
+                                            <a href="#">Гантели и штанги</a>
+                                            <a href="#">Самокаты</a>
+                                            <a href="#">Скейтборды</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="catalog__submenu_banner"><img src="images/submenu-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path d="M9.07 29.06H6.92c-.27 0-.5.2-.5.47 0 .26.23.47.5.47h2.15c.27 0 .5-.2.5-.47 0-.26-.23-.47-.5-.47zm9.65 0h-2.15c-.27 0-.5.2-.5.47 0 .26.23.47.5.47h2.15c.27 0 .5-.2.5-.47 0-.26-.23-.47-.5-.47zm-4.82-5.23h-1.96l-.26-.25c.35-.54.55-1.17.55-1.86 0-.96-.4-1.87-1.1-2.56-.7-.7-1.6-1.07-2.58-1.07-2.07 0-3.76 1.62-3.76 3.62s1.65 3.54 3.75 3.54c.98 0 1.86-.36 2.5-.96l.35.33c.1.1.2.14.34.14h2.16c.26 0 .48-.22.48-.47 0-.26-.2-.47-.48-.47zm-2.93-.94l-1.04-1c-.18-.2-.5-.2-.68 0-.2.17-.2.47 0 .66l1.13 1.1c-.48.4-1.13.67-1.83.67-1.56 0-2.78-1.14-2.78-2.6 0-1.48 1.25-2.7 2.78-2.7 1.47 0 2.7 1.24 2.7 2.7 0 .42-.1.8-.28 1.16zM29.7 1.03c-.23-.1-.52-.02-.64.2l-2.53 4.98h-2.77L25.48 5c.22-.16.26-.46.1-.66s-.46-.25-.68-.1L20.6 7.3c-.22.16-.27.46-.1.66.1.13.23.2.38.2.1 0 .2-.04.28-.1l1.28-.9h2.17L19.46 21.3c-2.68-1.82-5.13-3.46-8-5.05 0 0-.03 0-.03-.02-.97-.47-2-.7-2.98-.7-.78 0-1.53.12-2.23.38L3.35 7.17H6.9c.28 0 .5-.2.5-.47 0-.27-.22-.48-.5-.48H1.5c-.28 0-.5.2-.5.47 0 .25.22.46.5.46h.84l3 9.16c-.5.27-.96.62-1.38 1.02-1.18 1.17-1.84 2.73-1.84 4.38 0 1.62.64 3.15 1.78 4.3 1.16 1.2 2.72 1.86 4.38 1.9h11.04c1.75 0 3.16-1.4 3.16-3.12 0-1.4-1.34-2.36-1.76-2.63l-.43-.3 5.3-14.7h1.2c.2 0 .37-.1.45-.27l2.67-5.23c.13-.23.03-.52-.2-.63zM21.5 24.8c0 1.23-.95 2.2-2.17 2.2H8.3c-2.87-.1-5.2-2.45-5.2-5.28 0-2.9 2.4-5.26 5.38-5.26.82 0 1.7.2 2.52.6 3.27 1.83 6 3.7 9.17 5.87.65.43 1.34 1.14 1.34 1.87z"/></svg><span>Тренажеры</span>
+                                </a>
+                                <div class="catalog__submenu">
+                                    <div class="catalog__submenu_cols">
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Товары для тенниса</a>
+                                            <a href="#">Товары для хоккея</a>
+                                            <a href="#">Товары для бокса</a>
+                                            <a href="#">Шлемы</a>
+                                            <a href="#">Спортивные принадлежности</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Наградная продукция</a>
+                                            <a href="#">Лыжи</a>
+                                            <a href="#">Мячи</a>
+                                            <a href="#">Санки</a>
+                                            <a href="#">Турники</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Брусья</a>
+                                            <a href="#">Гантели и штанги</a>
+                                            <a href="#">Самокаты</a>
+                                            <a href="#">Скейтборды</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="catalog__submenu_banner"><img src="images/submenu-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><path d="M14.5 1C7.06 1 1 7.06 1 14.5S7.06 28 14.5 28 28 21.94 28 14.5 21.94 1 14.5 1zm0 19.3c-3.2 0-5.8-2.6-5.8-5.8 0-3.2 2.6-5.8 5.8-5.8 3.2 0 5.8 2.6 5.8 5.8 0 3.2-2.6 5.8-5.8 5.8zm6.5-7.22h5.9c.06 0 .12-.02.17-.04.05.48.1.96.1 1.46 0 .48-.04.96-.1 1.43-.05-.03-.1-.04-.17-.04H21c.1-.46.15-.92.15-1.4 0-.5-.06-.97-.16-1.42zm5.95-.84h-6.21c-.68-1.87-2.16-3.34-4.03-4v-6.2c5.2.92 9.3 5 10.25 10.2zM15.9 1.92c-.02.04-.04.08-.04.12V8c-.44-.1-.9-.15-1.36-.15-.5 0-.98.06-1.45.16V2.05c0-.04 0-.07-.02-.1.48-.06.97-.1 1.47-.1.47 0 .93.03 1.4.08zm-3.7.13v6.2c-1.82.7-3.28 2.15-3.94 3.98h-6.2C2.98 7.08 7.05 3 12.2 2.05zM1.93 15.9c-.05-.46-.08-.93-.08-1.4 0-.5.03-.97.1-1.44l.08.02h6c-.1.45-.17.93-.17 1.42 0 .47.05.94.15 1.4H1.92zm.12.83h6.2c.67 1.85 2.12 3.32 3.97 4v6.2C7.06 26 2.98 21.9 2.05 16.74zm10.98 10.34l.03-.15V21c.47.1.95.15 1.45.15.47 0 .92-.05 1.36-.14v5.92c0 .06.02.1.04.16-.46.05-.93.08-1.4.08-.5 0-1-.04-1.48-.1zm3.68-.1v-6.21c1.9-.66 3.38-2.15 4.06-4.03H26.96c-.93 5.2-5.05 9.3-10.26 10.23z"/></svg><span>Туризм и отдых</span>
+                                </a>
+                                <div class="catalog__submenu">
+                                    <div class="catalog__submenu_cols">
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Товары для тенниса</a>
+                                            <a href="#">Товары для хоккея</a>
+                                            <a href="#">Товары для бокса</a>
+                                            <a href="#">Шлемы</a>
+                                            <a href="#">Спортивные принадлежности</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Наградная продукция</a>
+                                            <a href="#">Лыжи</a>
+                                            <a href="#">Мячи</a>
+                                            <a href="#">Санки</a>
+                                            <a href="#">Турники</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Брусья</a>
+                                            <a href="#">Гантели и штанги</a>
+                                            <a href="#">Самокаты</a>
+                                            <a href="#">Скейтборды</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="catalog__submenu_banner"><img src="images/submenu-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27"><path d="M32.95 13.35c-.22-1.3-1.15-2.4-2.36-2.8-.52-.16-1.04-.2-1.56-.13-.03 0-.03-.02-.04-.03-.73-2.66-2.3-5.05-4.43-6.74C22.37 1.92 19.77 1 17 1c-2.76 0-5.38.92-7.57 2.66C7.3 5.36 5.73 7.74 5 10.4l-.04.02c-.52-.08-1.04-.03-1.55.14-1.2.4-2.13 1.5-2.35 2.8-.18 1.06.1 2.14.76 2.96.67.82 1.65 1.3 2.67 1.3.17 0 .33-.02.5-.04 0 0 .02 0 .03.03.73 2.66 2.3 5.05 4.43 6.74C11.63 26.08 14.23 27 17 27c2.76 0 5.38-.92 7.57-2.66 2.12-1.7 3.7-4.08 4.43-6.73l.04-.02c.16.02.32.04.5.04 1 0 2-.48 2.65-1.3.65-.82.93-1.9.75-2.97zm-1.48 2.35c-.5.6-1.2.94-1.94.94-.12 0-.24 0-.36-.03-.48-.06-.93.25-1.07.74-.68 2.45-2.13 4.66-4.1 6.22-2.02 1.6-4.44 2.46-7 2.46-2.56 0-4.98-.85-7-2.46C8.03 22 6.58 19.8 5.9 17.34c-.12-.45-.5-.74-.93-.74h-.14c-.12.03-.24.04-.36.04-.75 0-1.45-.34-1.94-.94-.5-.6-.7-1.4-.55-2.18.16-.94.83-1.74 1.7-2.03.4-.14.77-.17 1.15-.1.48.06.93-.25 1.07-.74C6.58 8.2 8.03 6 10 4.44c1.13-.9 2.4-1.57 3.73-1.98-.45.53-.7 1.14-.7 1.74 0 .72.37 1.36 1.03 1.8.7.44 1.68.67 2.94.67 1.03 0 1.83-.13 2.4-.38.82-.38.95-.94.95-1.24 0-1.1-1.5-1.98-3.35-1.98-.26 0-.47.22-.47.5 0 .26.2.48.47.48 1.56 0 2.4.7 2.4 1 0 .08-.1.2-.38.33-.3.13-.9.3-2.02.3-1.07 0-1.9-.2-2.44-.54-.4-.25-.58-.58-.58-.96 0-1.03 1.32-2.22 3.02-2.22 2.56 0 4.98.85 7 2.46 1.97 1.56 3.42 3.77 4.1 6.22.14.5.6.8 1.07.73.38-.07.76-.04 1.14.1.9.28 1.56 1.08 1.72 2.02.14.8-.06 1.57-.55 2.18zM17 16.64c-2.2 0-3.98 1.86-3.98 4.14 0 2.28 1.8 4.13 3.98 4.13 2.2 0 3.98-1.84 3.98-4.12 0-2.28-1.8-4.14-3.98-4.14zm-1.03 6.22c0-.6.46-1.07 1.03-1.07.57 0 1.03.47 1.03 1.06 0 .6-.46 1.08-1.03 1.08-.57 0-1.03-.48-1.03-1.08zm2.98.34l.02-.34c0-.96-.64-1.77-1.5-2v-.6c0-.28-.2-.5-.47-.5-.26 0-.47.22-.47.5v.6c-.86.23-1.5 1.04-1.5 2 0 .12 0 .23.02.34-.66-.58-1.1-1.45-1.1-2.42 0-1.75 1.38-3.16 3.05-3.16s3.04 1.4 3.04 3.16c0 .97-.43 1.84-1.1 2.42zm-6-10.78c0-.27-.22-.48-.48-.47-.55.02-1.14.1-1.77.62-.2.17-.24.47-.08.7.1.1.23.18.37.18.1 0 .2-.04.28-.1.4-.33.75-.4 1.23-.43.27 0 .47-.23.46-.5zm-.7 1.6c-.4 0-.73.35-.73.76v.52c0 .42.32.75.72.75.4 0 .72-.33.72-.75v-.52c0-.4-.32-.75-.72-.75zm11.05-1.45c-.63-.5-1.22-.6-1.77-.62-.26 0-.48.2-.5.47 0 .27.2.5.46.5.47.02.82.1 1.22.42.1.07.2.1.3.1.13 0 .27-.06.36-.18.16-.22.12-.52-.08-.7zm-1.54 1.46c-.4 0-.72.34-.72.75v.52c0 .42.32.75.72.75.4 0 .72-.33.72-.75v-.52c0-.4-.32-.75-.72-.75z"/></svg><span>Детям</span>
+                                </a>
+                                <div class="catalog__submenu">
+                                    <div class="catalog__submenu_cols">
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Товары для тенниса</a>
+                                            <a href="#">Товары для хоккея</a>
+                                            <a href="#">Товары для бокса</a>
+                                            <a href="#">Шлемы</a>
+                                            <a href="#">Спортивные принадлежности</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Наградная продукция</a>
+                                            <a href="#">Лыжи</a>
+                                            <a href="#">Мячи</a>
+                                            <a href="#">Санки</a>
+                                            <a href="#">Турники</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Брусья</a>
+                                            <a href="#">Гантели и штанги</a>
+                                            <a href="#">Самокаты</a>
+                                            <a href="#">Скейтборды</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="catalog__submenu_banner"><img src="images/submenu-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"><path d="M23.07 27H2.94c-.24 0-.42-.2-.42-.42V13.84H.42c-.17 0-.33-.1-.4-.26-.05-.16 0-.34.1-.46L12.73 1.1c.16-.17.4-.17.57 0l4 3.83V2.67c0-.23.2-.42.43-.42h3.2c.23 0 .42.2.42.42v6.1l4.53 4.35c.12.12.16.3.1.46-.07.15-.22.26-.4.26h-2.1v12.74c0 .23-.18.42-.4.42zm-19.7-.84h19.28V13.84H3.35zM1.46 13h23.08L13 1.97zm16.68-7.27l2.36 2.25v-4.9h-2.35zM17.3 23.7H8.7c-.23 0-.42-.18-.42-.4v-6.47c0-.23.2-.4.42-.4h8.57c.22 0 .4.17.4.4v6.46c0 .22-.18.4-.4.4zm-3.88-.83h3.45v-2.45h-3.45zm-4.28 0h3.45v-2.45H9.13zm4.28-3.3h3.45v-2.32h-3.45zm-4.28 0h3.45v-2.32H9.13zm7.7-8.84H9.68c-.23 0-.42-.2-.42-.42 0-2.2 1.8-3.98 4-3.98s4 1.8 4 4c0 .22-.2.4-.42.4zm-6.7-.84h6.26c-.2-1.55-1.54-2.74-3.14-2.74s-2.92 1.2-3.13 2.73z"/></svg><span>Для дачи и дома</span>
+                                </a>
+                                <div class="catalog__submenu">
+                                    <div class="catalog__submenu_cols">
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Товары для тенниса</a>
+                                            <a href="#">Товары для хоккея</a>
+                                            <a href="#">Товары для бокса</a>
+                                            <a href="#">Шлемы</a>
+                                            <a href="#">Спортивные принадлежности</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Наградная продукция</a>
+                                            <a href="#">Лыжи</a>
+                                            <a href="#">Мячи</a>
+                                            <a href="#">Санки</a>
+                                            <a href="#">Турники</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Брусья</a>
+                                            <a href="#">Гантели и штанги</a>
+                                            <a href="#">Самокаты</a>
+                                            <a href="#">Скейтборды</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="catalog__submenu_banner"><img src="images/submenu-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28"><path d="M22.86 3.28l-1.1-1.1v-.02C20.1.6 17.48.6 15.93 2.16l-.76.78-.77-.77C12.75.6 10.14.6 8.6 2.16l-.77.77-.76-.77C5.4.6 2.8.6 1.24 2.16l-1.1 1.1c-.14.14-.18.34-.12.52L6.7 21.32v2.5C6.7 26.2 9.24 28 11.5 28c1.12 0 2.3-.42 3.22-1.16 1.02-.8 1.58-1.88 1.58-3.02v-2.4L22.97 3.8c.06-.2.03-.4-.1-.52zm-13.6-.4c1.2-1.2 3.2-1.2 4.48 0l.9.9-2.4 10.7h-1.57l-2.3-10.7zm-8.22.87l.9-.88c1.18-1.2 3.18-1.2 4.45 0l1 1 2.27 10.6H4.9zM11.5 27.02c-1.6 0-3.45-1.15-3.78-2.7h7.56c-.32 1.55-2.17 2.7-3.78 2.7zm3.84-3.7H7.67v-1.5h7.67zm.14-2.48H7.56l-2.3-5.4h12.5zm2.64-6.37h-4.88l2.38-10.6 1-1c1.18-1.2 3.2-1.2 4.46 0l.88.88z"/></svg><span>Игры</span>
+                                </a>
+                                <div class="catalog__submenu">
+                                    <div class="catalog__submenu_cols">
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Товары для тенниса</a>
+                                            <a href="#">Товары для хоккея</a>
+                                            <a href="#">Товары для бокса</a>
+                                            <a href="#">Шлемы</a>
+                                            <a href="#">Спортивные принадлежности</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Наградная продукция</a>
+                                            <a href="#">Лыжи</a>
+                                            <a href="#">Мячи</a>
+                                            <a href="#">Санки</a>
+                                            <a href="#">Турники</a>
+                                        </div>
+                                        <div class="catalog__submenu_col">
+                                            <a href="#">Брусья</a>
+                                            <a href="#">Гантели и штанги</a>
+                                            <a href="#">Самокаты</a>
+                                            <a href="#">Скейтборды</a>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="catalog__submenu_banner"><img src="images/submenu-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="search">
+                        <div class="input_wrap">
+                            <img src="images/ico/search.svg" alt="" class="icon">
+                            <input type="text" id="input_search" placeholder="Поиск среди 2000 товаров">
+                            <input type="submit" value="Найти">
+                        </div>
+                        <div class="search__result">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="image"><img src="images/goods/1.png" alt=""></div>
+                                        <div class="text">
+                                            <div class="name">Турник настенный EffectSport ТН</div>
+                                            <div class="_price">1 690</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="image"><img src="images/goods/1.png" alt=""></div>
+                                        <div class="text">
+                                            <div class="name">Турник настенный EffectSport ТН</div>
+                                            <div class="_price">1 690</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="all-result">Все результаты</a>
+                        </div>
+                    </form>
+                    <div class="link_icons">
+                        <a href="#" class="link_icons__item" title="Сравнение">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18"><path d="M0 7V0h7v7zm5-2V2H2v3zM0 18v-7h7v7zm5-2v-3H2v3zM9 2V0h16v2zm0 5V5h16v2zm0 6v-2h16v2zm0 5v-2h16v2z" fill="#111"/></svg>
+                        </a>
+                        <a href="#" class="link_icons__item" title="Избранное">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="hearth" width="25" height="22" viewBox="0 0 24 22"><defs><clipPath id="a"><path d="M1288.23 135c-2.04 0-3.96.9-5.23 2.38-1.27-1.5-3.2-2.38-5.23-2.38-3.73 0-6.77 2.92-6.77 6.5 0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5l.48.35.47-.34c.82-.6 3.7-2.74 6.35-5.5 3.44-3.6 5.18-6.85 5.18-9.66 0-3.58-3.04-6.5-6.77-6.5z" fill="#fff"/></clipPath></defs><path d="M17.23 0C15.2 0 13.27.9 12 2.38 10.73.88 8.8 0 6.77 0 3.04 0 0 2.92 0 6.5c0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5L12 22l.47-.34c.82-.6 3.7-2.74 6.35-5.5C22.26 12.55 24 9.3 24 6.5 24 2.92 20.96 0 17.23 0z" fill="none"/><path d="M1288.23 135c-2.04 0-3.96.9-5.23 2.38-1.27-1.5-3.2-2.38-5.23-2.38-3.73 0-6.77 2.92-6.77 6.5 0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5l.48.35.47-.34c.82-.6 3.7-2.74 6.35-5.5 3.44-3.6 5.18-6.85 5.18-9.66 0-3.58-3.04-6.5-6.77-6.5z" fill="none" stroke-dasharray="0" stroke-linejoin="round" stroke-linecap="round" stroke="#111" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#a&quot;)" transform="translate(-1271 -135)"/></svg>
+                        </a>
+                        <a href="#" class="link_icons__item icon_with_count">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24"><path d="M.85 19.24h1c-.7 1.22-.52 2.8.5 3.83.6.6 1.42.93 2.3.93.86 0 1.65-.33 2.27-.93.6-.6.93-1.4.93-2.28 0-.57-.14-1.08-.4-1.56h4c-.7 1.22-.53 2.8.5 3.83.6.6 1.4.93 2.28.93.87 0 1.66-.33 2.28-.93.6-.6.95-1.4.95-2.28 0-.57-.15-1.08-.42-1.56h1.08c.48 0 .86-.37.86-.85s-.38-.86-.85-.86H1.7V15.9h18.65c.37 0 .7-.26.8-.63L23.97 5c.06-.26.02-.53-.14-.74-.17-.2-.42-.33-.67-.33H1.7V.85C1.7.37 1.33 0 .85 0S0 .37 0 .85v17.52c0 .5.37.87.85.87zm12.3.48c.28-.3.65-.46 1.06-.46.43 0 .8.17 1.1.46.28.3.45.66.45 1.07 0 .4-.17.78-.46 1.07-.6.58-1.58.58-2.16 0-.6-.6-.6-1.55 0-2.15zm-9.6 0c.3-.3.68-.46 1.1-.46.4 0 .78.17 1.07.46.3.3.45.66.45 1.07 0 .4-.16.78-.45 1.07-.58.58-1.58.58-2.16 0-.6-.6-.6-1.55 0-2.15zM1.7 5.62h20.35l-2.37 8.6H1.7z" fill="#111111"/></svg>
+                            <span class="icon_with_count__num">2</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="main">
+            <div class="wrapper">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><span>Где попрыгать на батутах в Москве</span></li>
+                </ul>
+                <div class="main__blog">
+                    <div class="white-box">
+                        <div class="main__blog_btns">
+                            <a href="#" class="main__blog_prev btn btn--white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 12 11"><path d="M0 5h8.7L5.54 2.4 6.77 1 12 6l-5.23 5-1.22-1.4L8.7 7H0z" fill="#000"/></svg>
+                                <span>Предыдущая запись</span>
+                            </a>
+                            <a href="#" class="main__blog_next btn btn--white">
+                                <span>Следующая запись</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 12 11"><path d="M0 5h8.7L5.54 2.4 6.77 1 12 6l-5.23 5-1.22-1.4L8.7 7H0z" fill="#000"/></svg>
+                            </a>
+                        </div>
+                        <h1>Где попрыгать на батутах в Москве</h1>
+                        <p>Чтобы без помощи специальных приспособлений или посещения спортзала за короткое время сформировать рельефную мускулатуру верхней и средней части тела, достаточно научиться подтягиваться на турнике в домашних условиях.</p>
+                        <img src="images/blog-img.jpg" alt="">
+                        <p>Покупка спортивных товаров через интернет позволяет сэкономить массу времени, сил и денег. Но есть здесь и свои секреты, нюансы и «подводные камни». <a href="#">Баскетбольный мяч купить в СПб</a>, или в любом другом городе России, разумеется, без проблем можно и в самом обычном магазине – много времени на это не потребуется. Но что делать, если необходимо приобрести достаточно дорогостоящий инвентарь, требующий скрупулезного подхода к выбору и тщательного внимания к его характеристикам?</p>
+                        <h2>Спортивные интернет-магазины: безграничный выбор</h2>
+                        <p>Одним из главных преимуществ интернет-магазинов спортивных товаров является, конечно же, практически безграничные возможности выбора. Ни один спортивный магазин, существующий в реале, не способен предложить такой ассортимент, как выдача поисковой системы по вбитому запросу. Гири купить в Спб или комплексный тренажер в Тюмени – проблему можно решить не вставая из-за компьютера! При этом можно выбрать подходящую форму, дизайн, функционал и сравнить аналогичные товары между собой не только по характеристикам, но и по цене.</p>
+                        <p>Специфика интернет-магазинов позволяет существенно сэкономить время, которое приходится тратить на посещение реальных магазинов, часто находящихся в разных частях города. Соответственно, сокращаются и расходы на бензин или поездки на общественном транспорте. Однако, есть у покупок в интернете и определенные тонкости.</p>
+                        <h2>Нюансы покупки спорттоваров в интернете</h2>
+                        <ul>
+                            <li>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</li>
+                            <li>Разнообразный и богатый опыт консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров.</li>
+                            <li>С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание новых предложений.</li>
+                        </ul>
+                        <h3>Lorem ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eligendi eaque consequuntur, aperiam quasi fugit voluptatibus perspiciatis eos nostrum. Cum possimus aliquid molestias distinctio tenetur modi blanditiis, minima incidunt dicta maiores adipisci aliquam temporibus inventore illum, necessitatibus amet laborum beatae autem molestiae. Repellat dolores eaque odit sapiente explicabo, expedita quis.</p>
+                        <script type="text/javascript">(function() {
+                          if (window.pluso)if (typeof window.pluso.start == "function") return;
+                          if (window.ifpluso==undefined) { window.ifpluso = 1;
+                            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                            var h=d[g]('body')[0];
+                            h.appendChild(s);
+                          }})();</script>
+                        <div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="facebook,vkontakte,odnoklassniki,twitter"></div>
+                    </div>
+                    <div class="product__reviews">
+                        <div class="caption">Комментарии <span>(2)</span></div>
+                        <div class="white-box">
+                            <div class="product__review">
+                                <span class="title">Виктор Шейкин</span>
+                                <div class="info">
+                                    <span>24.03.2016</span>
+                                    <div class="goods__rating">
+                                        <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star"><img src="images/ico/star.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <div class="product__review">
+                                <span class="title">Виктор Шейкин</span>
+                                <div class="info">
+                                    <span>24.03.2016</span>
+                                    <div class="goods__rating">
+                                        <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star"><img src="images/ico/star.svg" alt=""></div>
+                                        <div class="star"><img src="images/ico/star.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                            <a href="#" class="btn">Оставить комментарий</a>
+                        </div>
+                    </div>
+                </div>
+                <aside class="r_sidebar hot_sale">
+                    <div class="hot_sale__title">
+                        <h5><span>Горящие</span> товары</h5>
+                        <div class="hot_sale_control hot_sale_control--prev"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"><path d="M0 5h8.7L5.54 2.4 6.77 1 12 6l-5.23 5-1.22-1.4L8.7 7H0z" fill="#fff"/></svg></div>
+                        <div class="hot_sale_control hot_sale_control--next"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"><path d="M0 5h8.7L5.54 2.4 6.77 1 12 6l-5.23 5-1.22-1.4L8.7 7H0z" fill="#fff"/></svg></div>
+                    </div>
+                    <div class="hot_sale__slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="hot_sale__items swiper-slide">
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/1.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Турник настенный EffectSport ТН</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/2.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Турник-брусья-пресс Effectsport</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/3.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Горка для шариков, набор №1</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/4.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Шведская стенка деревянная Effect...</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/5.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Шведская стенка EffectSport</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/6.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Турник настенный EffectSport ТН</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/7.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Гантель разборная обрезиненная 37 кг</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/7.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Гантель разборная обрезиненная 37 кг</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="hot_sale__items swiper-slide">
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/1.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Турник настенный EffectSport ТН</p>
+                                        <span class="_price class="_price"">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/2.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Турник-брусья-пресс Effectsport</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/3.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Горка для шариков, набор №1</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/4.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Шведская стенка деревянная Effect...</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/5.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Шведская стенка EffectSport</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/6.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Турник настенный EffectSport ТН</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/7.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Гантель разборная обрезиненная 37 кг</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="hot_sale__item">
+                                    <div class="hot_sale__image"><img src="images/hot/7.png" alt=""></div>
+                                    <div class="info">
+                                        <p>Гантель разборная обрезиненная 37 кг</p>
+                                        <span class="_price">1 800</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="similarnews">
+                        <div class="hot_sale__title">
+                            <h5>Похожие записи</h5>
+                        </div>
+                        <a href="#" class="similarnews__item">
+                            <div class="similarnews__image"><img src="images/similarnews-img.png" alt=""></div>
+                            <p>Как научиться подтягиваться на турнике с нуля</p>
+                        </a>
+                        <a href="#" class="similarnews__item">
+                            <div class="similarnews__image"><img src="images/similarnews-img.png" alt=""></div>
+                            <p>Как научиться подтягиваться на турнике с нуля</p>
+                        </a>
+                        <a href="#" class="similarnews__item">
+                            <div class="similarnews__image"><img src="images/similarnews-img.png" alt=""></div>
+                            <p>Как научиться подтягиваться на турнике с нуля</p>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__col">
+                    <span class="footer__title">Клиентам</span>
+                    <ul>
+                        <li><a href="#">Оплата, доставка, гарантия</a></li>
+                        <li><a href="#">Преимущества покупок на site.ru</a></li>
+                        <li><a href="#">Получение и возврат купонов</a></li>
+                        <li><a href="#">Архив рассылок</a></li>
+                        <li><a href="#">Новые товары на site.ru</a></li>
+                        <li><a href="#">Вопросы пользователей</a></li>
+                        <li><a href="#">Юридические документы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <span class="footer__title">Партнерам</span>
+                    <ul>
+                        <li><a href="#">Выгода для партнера</a></li>
+                        <li><a href="#">Как стать партнером</a></li>
+                        <li><a href="#">Оптовым партнерам</a></li>
+                        <li><a href="#">Активный отдых - оферта</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <span class="footer__title">О нас</span>
+                    <ul>
+                        <li><a href="#">Что такое site.ru (как работает)</a></li>
+                        <li><a href="#">СМИ об site.ru</a></li>
+                        <li><a href="#">Работа мечты</a></li>
+                        <li><a href="#">Site.ru - внутри и вокруг</a></li>
+                        <li><a href="#">Как с нами связаться (и как от нас отвязаться)</a></li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__col--last">
+                    <span class="footer__title">Контакты</span>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <img src="images/ico/mark.svg" alt="">
+                            </div>
+                            <span>г. Москва, М. Прошлякова, 4</span>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/ico/small-smartphone.svg" alt="">
+                            </div>
+                            <a href="tel:+74956645497">+7 (495) 664-54-97</a>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <img src="images/ico/mail.svg" alt="">
+                            </div>
+                            <a href="mailto:site@gmail.com">site@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="footer__dev">
+                        <a href="http://markello.ru/" target="_blank">
+                            <img src="images/ico/markello.svg" alt="">
+                            <span>Разработка сайта</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<a id="goup"><svg xmlns="http://www.w3.org/2000/svg" width="314.069" height="314.069" viewBox="0 0 314.069 314.069"><path d="M168.133 97.482c-6.126-6.127-16.072-6.127-22.197 0h-.008c-.016.016-.024.032-.032.04l-44.37 44.364c-6.132 6.13-6.132 16.08 0 22.208v-.01c6.13 6.133 16.07 6.133 22.202 0l17.607-17.597v65.503c0 8.664 7.033 15.7 15.7 15.7 8.67 0 15.697-7.036 15.697-15.7v-65.503l17.602 17.598c6.135 6.132 16.077 6.132 22.2 0v.01c6.136-6.13 6.136-16.08 0-22.21l-44.4-44.403zm124.87-18.957C249.65 3.435 153.62-22.295 78.532 21.06 3.437 64.41-22.295 160.444 21.07 235.543c43.35 75.087 139.375 100.822 214.465 57.467 75.096-43.362 100.832-139.39 57.47-214.485zm-73.167 187.277c-60.075 34.685-136.894 14.114-171.576-45.97-34.69-60.07-14.097-136.896 45.972-171.58 60.07-34.682 136.894-14.098 171.578 45.98 34.685 60.076 14.098 136.886-45.974 171.57z"/></svg></a>
+        <div id="overlay"></div>
+        <div class="popup product quickView">
+            <a href="#" class="quickView__btn quickView__btn--left"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14"><path d="M2.513 1L1 2.514 5.973 7.5 1 12.48 2.513 14 9 7.5z" fill="#3a3c88"/></svg></a>
+            <div class="popup_close"><img src="images/ico/delete.svg" alt=""></div>
+            <div class="product__left">
+                <div class="product__gallery">
+                    <div data-thumb="images/galllery/1.png">
+                        <img src="images/galllery/1.png" />
+                    </div>
+                    <div data-thumb="images/galllery/1.png">
+                        <img src="images/galllery/1.png" />
+                    </div>
+                    <div data-thumb="images/galllery/1.png">
+                        <img src="images/galllery/1.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="product__right">
+                <div class="product__order">
+                    <h3 class="product__name">Турник настенный EffectSport ТН</h3>
+                    <div class="product__articul">Артикулы: 2310U, 2312U, 2314U</div>
+                    <div class="goods__prices">
+                        <div class="goods__price goods__price--old _price">2000</div>
+                        <div class="goods__price">
+                            1690
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="13" viewBox="0 0 10 13"><path d="M.25 11.1H2v1.63c0 .08.02.14.07.2.05.04.1.07.18.07h1.3c.07 0 .13-.03.18-.08.05-.05.07-.1.07-.2V11.1h3.95c.07 0 .13-.04.18-.1.05-.04.07-.1.07-.18v-1.1c0-.07-.02-.14-.07-.2-.05-.04-.1-.07-.18-.07H3.8v-1h2.66C7.5 8.45 8.36 8.1 9 7.4c.67-.7 1-1.58 1-2.68s-.33-2-1-2.68C8.36 1.34 7.5 1 6.47 1h-4.2c-.08 0-.14.02-.2.08-.04.05-.06.1-.06.2v5.35H.25c-.07 0-.13.03-.18.08-.05.07-.07.13-.07.2v1.27c0 .08.02.15.07.2.05.05.1.08.18.08H2v1H.25c-.07 0-.13.03-.18.08-.05.05-.07.12-.07.2v1.1c0 .07.02.13.07.18.05.06.1.1.18.1zM3.8 2.8h2.5c.56 0 1 .2 1.34.54.34.36.5.82.5 1.38 0 .57-.16 1.03-.5 1.38-.34.36-.78.53-1.34.53H3.8z"/></svg>
+                        </div>
+                    </div>
+                    <div class="product__order_review">
+                        <div class="goods__rating">
+                            <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                            <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                            <div class="star active"><img src="images/ico/star.svg" alt=""></div>
+                            <div class="star"><img src="images/ico/star.svg" alt=""></div>
+                            <div class="star"><img src="images/ico/star.svg" alt=""></div>
+                        </div>
+                        <a href="#block-with-review" class="view-review anchor">Читать отзывы</a>
+                    </div>
+                    <div class="product__order_add">
+                        <a class="btn callPopup" data-popupBlock="addToCart">Добавить в корзину</a>
+                        <div class="link_icons link_icons--gray">
+                            <a href="#" class="link_icons__item" title="Добавить к сравнению">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18"><path d="M0 7V0h7v7zm5-2V2H2v3zM0 18v-7h7v7zm5-2v-3H2v3zM9 2V0h16v2zm0 5V5h16v2zm0 6v-2h16v2zm0 5v-2h16v2z" fill="#111"/></svg>
+                                    </a>
+                            <a href="#" class="link_icons__item" title="Отложить на потом">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="hearth" width="25" height="22" viewBox="0 0 24 22"><defs><clipPath id="a"><path d="M1288.23 135c-2.04 0-3.96.9-5.23 2.38-1.27-1.5-3.2-2.38-5.23-2.38-3.73 0-6.77 2.92-6.77 6.5 0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5l.48.35.47-.34c.82-.6 3.7-2.74 6.35-5.5 3.44-3.6 5.18-6.85 5.18-9.66 0-3.58-3.04-6.5-6.77-6.5z" fill="#fff"/></clipPath></defs><path d="M17.23 0C15.2 0 13.27.9 12 2.38 10.73.88 8.8 0 6.77 0 3.04 0 0 2.92 0 6.5c0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5L12 22l.47-.34c.82-.6 3.7-2.74 6.35-5.5C22.26 12.55 24 9.3 24 6.5 24 2.92 20.96 0 17.23 0z" fill="none"/><path d="M1288.23 135c-2.04 0-3.96.9-5.23 2.38-1.27-1.5-3.2-2.38-5.23-2.38-3.73 0-6.77 2.92-6.77 6.5 0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5l.48.35.47-.34c.82-.6 3.7-2.74 6.35-5.5 3.44-3.6 5.18-6.85 5.18-9.66 0-3.58-3.04-6.5-6.77-6.5z" fill="none" stroke-dasharray="0" stroke-linejoin="round" stroke-linecap="round" stroke="#111" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#a&quot;)" transform="translate(-1271 -135)"/></svg>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="product__order_bottom">
+                        <table class="goods__table">
+                            <tr>
+                                <td>Тип:</td>
+                                <td>Потолочный</td>
+                            </tr>
+                            <tr>
+                                <td>Материал:</td>
+                                <td>Металл</td>
+                            </tr>
+                            <tr>
+                                <td>Макс. вес:</td>
+                                <td>150 кг</td>
+                            </tr>
+                            <tr>
+                                <td>Вес турника:</td>
+                                <td>5.5 кг</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="#" class="go_page">Перейти на страницу товара<svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14"><path d="M2.513 1L1 2.514 5.973 7.5 1 12.48 2.513 14 9 7.5z" fill="#3a3c88"/></svg></a>
+                </div>
+            </div>
+            <a href="#" class="quickView__btn quickView__btn--right"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14"><path d="M2.513 1L1 2.514 5.973 7.5 1 12.48 2.513 14 9 7.5z" fill="#3a3c88"/></svg></a>
+        </div>
+        
+    </div>
+        
+    <script src="_trg.js"></script>
+    </body>
+
+</html>
