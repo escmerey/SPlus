@@ -19,7 +19,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
         <!-- Document stylesheet files -->
         <link rel="stylesheet" href="style/swiper.min.css"/>
-        <link rel="stylesheet" href="style/jquery-ui.min.css"/>
+        
         <link rel="stylesheet" href="style/lightslider.css"/>
         <link rel="stylesheet" href="style/nice-select.css"/>
         <link rel="stylesheet" href="style/perfect-scrollbar.css"/>
@@ -476,6 +476,7 @@
                     <div class="product__right">
                         <div class="product__order">
                             <span class="product__availability product__availability--no">Нет в наличии</span>
+                            <a href="#" class="btn btn--full callPopup" data-popupBlock="popupInformme">Сообщить о поступлении товара</a>
                             <div class="goods__prices">
                                 <div class="goods__price goods__price--old _price">2000</div>
                                 <div class="goods__price">
@@ -1349,6 +1350,18 @@
                 </div>
                 <a href="#" class="popupSignin__forgott">Забыл пароль</a>
                 <input type="submit" class="btn" value="Войти">
+            </div>
+        </div>
+
+        <div class="popup popupInformme">
+            <div class="popup_close"><img src="images/ico/delete.svg" alt=""></div>
+            <div class="popup__title">Сообщить о поступлении товара</div>
+            <div class="popup__content">
+                <div class="input_wrap input_wrap--col_1">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="mail@example.com">
+                </div>
+                <input type="submit" class="btn" value="Отправить">
             </div>
         </div>
 

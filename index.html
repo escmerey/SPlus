@@ -19,8 +19,9 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
         <!-- Document stylesheet files -->
         <link rel="stylesheet" href="style/swiper.min.css"/>
-        <link rel="stylesheet" href="style/jquery-ui.min.css"/>
+        
         <link rel="stylesheet" href="style/lightslider.css"/>
+        <link rel="stylesheet" href="js/lightgallery/css/lightgallery.min.css"/>
         <link rel="stylesheet" href="style/nice-select.css"/>
         <link rel="stylesheet" href="style/perfect-scrollbar.css"/>
         <link rel="stylesheet" href="style/style.css"/>
@@ -34,9 +35,11 @@
         <script src="js/swiper.jquery.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/lightslider.min.js"></script>
+        <script src="js/lightgallery/js/lightgallery.min.js"></script>
         <script src="js/jquery.nice-select.min.js"></script>
         <script src="js/perfect-scrollbar.jquery.min.js"></script>
         <script src="js/jQueryUITouch.js"></script>
+        <script src="js/jquery.easyzoom-modified.min.js"></script>
         <!-- Google map -->
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyD5oswumLUaPeyYKa0zpFR7gNsobVkS7eI"></script>
         <!-- Functionaly scripts -->
@@ -56,7 +59,7 @@
                 <a href="#" class="hidden_menu__item">Блог</a>
                 <a href="#" class="hidden_menu__item">Контакты</a>
                 <a href="#" class="hidden_menu__item yellow">Оплата и доставка</a>
-                <a href="#" class="hidden_menu__item line">Заказать звонок</a>
+                <a href="#" class="hidden_menu__item line callPopup" data-popupBlock="popupCallback">Заказать звонок</a>
             </div>
             <div class="header__middle_item">
                 <img src="images/ico/smartphone.svg" class="header__icon" alt="">
@@ -91,7 +94,7 @@
                     </div>
                     <div class="header__rightlink">
                         <a href="#" class="header__rightlink_item">Оплата и доставка</a>
-                        <a href="#" class="header__rightlink_item">Заказать звонок</a>
+                        <a href="#" class="header__rightlink_item callPopup" data-popupBlock="popupCallback">Заказать звонок</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +102,7 @@
                 <div class="wrapper">
                     <a href="/" class="header__middle_item header__logo"><img src="images/logotype.png" alt=""></a>
                     <hr>
-                    <div class="header__middle_item">
+                    <div class="header__middle_item header__middle_item--phone">
                         <img src="images/ico/smartphone.svg" class="header__icon" alt="">
                         <a href="tel:88005553535" class="header__phone">8 800 555 35 35</a>
                     </div>
@@ -340,11 +343,13 @@
                         </div>
                     </form>
                     <div class="link_icons">
-                        <a href="#" class="link_icons__item" title="Сравнение">
+                        <a href="#" class="link_icons__item icon_with_count" title="Сравнение">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18"><path d="M0 7V0h7v7zm5-2V2H2v3zM0 18v-7h7v7zm5-2v-3H2v3zM9 2V0h16v2zm0 5V5h16v2zm0 6v-2h16v2zm0 5v-2h16v2z" fill="#111"/></svg>
+                            <span class="icon_with_count__num">2</span>
                         </a>
-                        <a href="#" class="link_icons__item" title="Избранное">
+                        <a href="#" class="link_icons__item icon_with_count" title="Избранное">
                             <svg xmlns="http://www.w3.org/2000/svg" class="hearth" width="25" height="22" viewBox="0 0 24 22"><defs><clipPath id="a"><path d="M1288.23 135c-2.04 0-3.96.9-5.23 2.38-1.27-1.5-3.2-2.38-5.23-2.38-3.73 0-6.77 2.92-6.77 6.5 0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5l.48.35.47-.34c.82-.6 3.7-2.74 6.35-5.5 3.44-3.6 5.18-6.85 5.18-9.66 0-3.58-3.04-6.5-6.77-6.5z" fill="#fff"/></clipPath></defs><path d="M17.23 0C15.2 0 13.27.9 12 2.38 10.73.88 8.8 0 6.77 0 3.04 0 0 2.92 0 6.5c0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5L12 22l.47-.34c.82-.6 3.7-2.74 6.35-5.5C22.26 12.55 24 9.3 24 6.5 24 2.92 20.96 0 17.23 0z" fill="none"/><path d="M1288.23 135c-2.04 0-3.96.9-5.23 2.38-1.27-1.5-3.2-2.38-5.23-2.38-3.73 0-6.77 2.92-6.77 6.5 0 2.8 1.74 6.06 5.18 9.65 2.65 2.77 5.53 4.92 6.34 5.5l.48.35.47-.34c.82-.6 3.7-2.74 6.35-5.5 3.44-3.6 5.18-6.85 5.18-9.66 0-3.58-3.04-6.5-6.77-6.5z" fill="none" stroke-dasharray="0" stroke-linejoin="round" stroke-linecap="round" stroke="#111" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#a&quot;)" transform="translate(-1271 -135)"/></svg>
+                            <span class="icon_with_count__num">2</span>
                         </a>
                         <a href="#" class="link_icons__item icon_with_count">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24"><path d="M.85 19.24h1c-.7 1.22-.52 2.8.5 3.83.6.6 1.42.93 2.3.93.86 0 1.65-.33 2.27-.93.6-.6.93-1.4.93-2.28 0-.57-.14-1.08-.4-1.56h4c-.7 1.22-.53 2.8.5 3.83.6.6 1.4.93 2.28.93.87 0 1.66-.33 2.28-.93.6-.6.95-1.4.95-2.28 0-.57-.15-1.08-.42-1.56h1.08c.48 0 .86-.37.86-.85s-.38-.86-.85-.86H1.7V15.9h18.65c.37 0 .7-.26.8-.63L23.97 5c.06-.26.02-.53-.14-.74-.17-.2-.42-.33-.67-.33H1.7V.85C1.7.37 1.33 0 .85 0S0 .37 0 .85v17.52c0 .5.37.87.85.87zm12.3.48c.28-.3.65-.46 1.06-.46.43 0 .8.17 1.1.46.28.3.45.66.45 1.07 0 .4-.17.78-.46 1.07-.6.58-1.58.58-2.16 0-.6-.6-.6-1.55 0-2.15zm-9.6 0c.3-.3.68-.46 1.1-.46.4 0 .78.17 1.07.46.3.3.45.66.45 1.07 0 .4-.16.78-.45 1.07-.58.58-1.58.58-2.16 0-.6-.6-.6-1.55 0-2.15zM1.7 5.62h20.35l-2.37 8.6H1.7z" fill="#111111"/></svg>
@@ -1658,19 +1663,32 @@
             <a href="#" class="quickView__btn quickView__btn--left"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14"><path d="M2.513 1L1 2.514 5.973 7.5 1 12.48 2.513 14 9 7.5z" fill="#3a3c88"/></svg></a>
             <div class="popup_close"><img src="images/ico/delete.svg" alt=""></div>
             <div class="product__left">
-                <div class="product__gallery">
+                <div class="product__gallery lightgallery">
                     <div data-thumb="images/galllery/1.png">
-                        <img src="images/galllery/1.png" />
+                        <a href="images/galllery/1.png" class="zoom demo lightgallery_item" data-image="images/galllery/1.png">
+                            <img src="images/galllery/1.png" />
+                            <div class="preview-zoom"></div>
+                        </a>
                     </div>
                     <div data-thumb="images/galllery/1.png">
-                        <img src="images/galllery/1.png" />
+                        <a href="images/galllery/1.png" class="zoom demo lightgallery_item" data-image="images/galllery/1.png">
+                            <img src="images/galllery/1.png" />
+                            <div class="preview-zoom"></div>
+                        </a>
                     </div>
                     <div data-thumb="images/galllery/1.png">
-                        <img src="images/galllery/1.png" />
+                        <a href="images/galllery/1.png" class="zoom demo lightgallery_item" data-image="images/galllery/1.png">
+                            <img src="images/galllery/1.png" />
+                            <div class="preview-zoom"></div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="product__right">
+                <div id="container-zoom">
+                    <div id="window-zoom" style="display:none;"></div>
+                </div>
+
                 <div class="product__order">
                     <h3 class="product__name">Турник настенный EffectSport ТН</h3>
                     <div class="product__articul">Артикулы: 2310U, 2312U, 2314U</div>
@@ -1751,6 +1769,22 @@
                 </div>
                 <a href="#" class="popupSignin__forgott">Забыл пароль</a>
                 <input type="submit" class="btn" value="Войти">
+            </div>
+        </div>
+
+        <div class="popup popupCallback">
+            <div class="popup_close"><img src="images/ico/delete.svg" alt=""></div>
+            <div class="popup__title">Обратный звонок</div>
+            <div class="popup__content">
+                <div class="input_wrap input_wrap--col_1">
+                    <label>Имя<b></b></label>
+                    <input type="text" placeholder="Иван" name="usr_name">
+                </div>
+                <div class="input_wrap input_wrap--col_1">
+                    <label>Ваш телефон</label>
+                    <input type="tel" placeholder="+7 (___) ___-____ " name="usr_phone">
+                </div>
+                <input type="submit" class="btn" value="Заказать">
             </div>
         </div>
 
