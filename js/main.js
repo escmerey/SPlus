@@ -126,6 +126,13 @@ $(function() {
         };
     });
 
+    if ($(window).width() < 1130) {
+        $('.goods').on('click', '.goods__item', function(event) {
+            $('.goods__item').removeClass('deployed');
+            $(this).addClass('deployed');
+        });
+    }
+
 
     //Добавляем маску к вводу телефона
     $("input[type='tel']").each(function() {
