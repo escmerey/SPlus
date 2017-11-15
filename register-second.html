@@ -559,7 +559,7 @@
             </div>
         </footer>
 <a id="goup"><svg xmlns="http://www.w3.org/2000/svg" width="314.069" height="314.069" viewBox="0 0 314.069 314.069"><path d="M168.133 97.482c-6.126-6.127-16.072-6.127-22.197 0h-.008c-.016.016-.024.032-.032.04l-44.37 44.364c-6.132 6.13-6.132 16.08 0 22.208v-.01c6.13 6.133 16.07 6.133 22.202 0l17.607-17.597v65.503c0 8.664 7.033 15.7 15.7 15.7 8.67 0 15.697-7.036 15.697-15.7v-65.503l17.602 17.598c6.135 6.132 16.077 6.132 22.2 0v.01c6.136-6.13 6.136-16.08 0-22.21l-44.4-44.403zm124.87-18.957C249.65 3.435 153.62-22.295 78.532 21.06 3.437 64.41-22.295 160.444 21.07 235.543c43.35 75.087 139.375 100.822 214.465 57.467 75.096-43.362 100.832-139.39 57.47-214.485zm-73.167 187.277c-60.075 34.685-136.894 14.114-171.576-45.97-34.69-60.07-14.097-136.896 45.972-171.58 60.07-34.682 136.894-14.098 171.578 45.98 34.685 60.076 14.098 136.886-45.974 171.57z"/></svg></a>
-        <div id="overlay" class=""></div>
+        <div id="overlay" class="visible"></div>
         <div class="popup product quickView">
             <a href="#" class="quickView__btn quickView__btn--left"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14"><path d="M2.513 1L1 2.514 5.973 7.5 1 12.48 2.513 14 9 7.5z" fill="#3a3c88"/></svg></a>
             <div class="popup_close"><img src="images/ico/delete.svg" alt=""></div>
@@ -658,6 +658,29 @@
                 <a href="#" class="popupSignin__forgott">Забыл пароль</a>
                 <input type="submit" class="btn" value="Войти">
             </div>
+        </div>
+
+        <div class="popup popupOffer visible">
+            <div class="popup_close"><img src="images/ico/delete.svg" alt=""></div>
+            <div class="popup__title">Бонусы за подписку</div>
+            <div class="popup__content">
+                <p>Дарим 500 бонусов за подписку!</p>
+                <div class="row" id="office-auth-form">
+                    <form method="post" class="form-horizontal" id="office-auth-offer">
+                        <div class="input_wrap input_wrap--col_1">
+                            <label for="user_email">E-mail</label>
+                            <input type="email" name="email" id="user_email" placeholder="mail@example.com">
+                            <label>
+                                <input type="checkbox" name="agree" value="1"><span></span> Согласен получать рекламную рассылку по смс и email
+                            </label>
+                        </div>
+                        
+                        <input type="hidden" name="action" value="auth/formRegister">
+                        <input type="hidden" name="return" value="">
+                        <input type="submit" class="btn" value="Зарегистрироваться">
+                    </form>
+                </div>
+            </div>    
         </div>
 
         

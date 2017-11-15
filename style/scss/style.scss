@@ -3520,17 +3520,18 @@ form.search {
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        input[type='checkbox']{
-            -webkit-appearance: checkbox;
-            -moz-appearance: checkbox;
-            appearance: checkbox;
+        input[type='checkbox'] {
             float: left;
             margin-right: 10px;
+
+            -webkit-appearance: checkbox;
+               -moz-appearance: checkbox;
+                    appearance: checkbox;
         }
         input[type='radio'] {
             -webkit-appearance: radio;
-            -moz-appearance: radio;
-            appearance: radio;
+               -moz-appearance: radio;
+                    appearance: radio;
         }
     }
     &__signin,
@@ -4366,6 +4367,26 @@ form.search {
     max-width: 320px;
 }
 
+.popupOffer {
+    max-width: 350px;
+    form {
+        border: none;
+    }
+
+    input[type='checkbox'] {
+        float: left;
+        width: auto;
+        height: auto;
+        margin-right: 15px;
+
+        -webkit-appearance: checkbox;
+           -moz-appearance: checkbox;
+                appearance: checkbox;
+    }
+    .row {
+        margin-top: 15px;
+    }
+}
 
 #goup {
     position: fixed;
