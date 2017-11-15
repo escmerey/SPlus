@@ -546,7 +546,7 @@ $(function() {
 
     $('.feedback').on('click', function(event) {
         event.preventDefault();
-        $(this).css('display', 'none').parents('.product__reviews').find('form').css('display', 'block').find('textarea').focus();
+        $(this).css('display', 'none').parents('.product__reviews').find('form').css('display', 'flex').find('textarea').focus();
     });
 
     //Вызов google карты
